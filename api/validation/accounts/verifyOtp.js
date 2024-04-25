@@ -2,7 +2,7 @@ const Joi = require('joi');
 const response = require("../../utils/res")
 const otpValidation = Joi.object({
     emailId: Joi.string().email().required(),
-    otp: Joi.string().required(),
+    otp: Joi.number().required(),
 });
 
 const validateOtpAccount = (req, res, next) => {

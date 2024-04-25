@@ -82,7 +82,7 @@ controller.verifyOtp = async(req, res)=>{
                 return res.status(response.failedStatus).json({status:response.failedStatus, message:response.otpFailed})
             }
         } else{
-            return res.status.response.failedStatus.json({status:response.failedStatus, message:response.otpTimeOut})
+            return res.status(response.failedStatus).json({status:response.failedStatus, message:response.otpTimeOut})
         }
         
     } catch (e) {
