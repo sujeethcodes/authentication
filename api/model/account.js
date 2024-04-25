@@ -24,6 +24,11 @@ const accounts = DB.define(
       field: "password",
       type: Sequelize.DataTypes.STRING,
     },
+    user:{
+      field: "user",
+      type: Sequelize.DataTypes.STRING,
+      defaultValue: "user" 
+    },
     isAdmin:{
       field: "isAdmin",
       type: Sequelize.DataTypes.BOOLEAN,
