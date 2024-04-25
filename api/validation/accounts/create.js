@@ -8,6 +8,9 @@ const createAccountValidation = Joi.object({
     role : Joi.string().required(),
     emailId: Joi.string().email().required(),
     password: Joi.string().required(),
+    isAdmin: Joi.boolean().optional()
+
+
 });
 
 const validateAccountCreation = (req, res, next) => {

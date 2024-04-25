@@ -3,6 +3,7 @@ const nodemailer =  require("nodemailer")
 const response = require("../utils/res")
  
 const sendEmail = async (email, otp) => {
+    console.log(email, otp)
     let transporter = nodemailer.createTransport({
          service: 'gmail',
         auth: {
